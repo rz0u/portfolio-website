@@ -4,7 +4,8 @@ export const Bio = {
     "Front-End Developer",
     "Back-End Developer",
     "Full Stack Developer",
-    "Programmer",
+    "Web Developer",
+    "Software Engineer",
   ],
   description:
     "I am a creative and highly skilled individual with a penchant for innovation and problem-solving. Having spent a year as a Geologist in the Mining Industry, I honed my team management skills, consistently delivering successful outcomes and mastering the art of processing research data.",
