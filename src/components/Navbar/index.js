@@ -5,23 +5,24 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
-background-color: ${({ theme }) => theme.cardLight};}
-height: 80px;
-display: flex;
-align-items: center;
-font-size: 1rem;
-position: sticky;
-top: 0;
-z-index: 10;
-
-@media screen and (max-width: 960px) {
-  transition: 0.8s all ease;
-}
+  background-color: ${({ theme }) => theme.cardLight};
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  @media (max-width: 960px) {
+    trastion: 0.8s all ease;
+  }
 `;
 
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 60px;
   z-index: 1;
   width: 100%;
@@ -30,16 +31,15 @@ const NavContainer = styled.div`
 `;
 
 const NavLogo = styled(LinkR)`
-width: 80%;
-padding: 0 6px;
-display: flex;
-justify-self: flex-start;
-cursor: pointer;
-text-decoration: none;
-align-items: center;
-
-@media screen and (max-width: 640px) {
-  padding: 0;
+  width: 80%;
+  padding: 0 6px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+  @media (max-width: 640px) {
+    padding: 0 0px;
+  }
 `;
 
 const MobileIcon = styled.div`
