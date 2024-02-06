@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router } from "react-router-dom";
+import Projects from "./components/Projects";
+import { useState } from "react";
+import ProjectDetails from "./components/ProjectDetails";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -28,6 +31,7 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkTheme}>
       <Router>
@@ -37,6 +41,10 @@ function App() {
           <Wrapper>
             <Skills />
           </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          {openModal.state && (
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          )}
         </Body>
       </Router>
     </ThemeProvider>

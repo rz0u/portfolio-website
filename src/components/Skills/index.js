@@ -118,9 +118,9 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Container id="about">
+    <Container id="stack">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title>Tech Stack</Title>
         <Desc>Here are some of the technologies I've worked with.</Desc>
         <SkillsContainer>
           {skills.map((skill) => (

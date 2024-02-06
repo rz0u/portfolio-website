@@ -179,7 +179,7 @@ const Navbar = () => {
         </MobileIcon>
         <NavItems>
           <NavLink href="#home">Home</NavLink>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#stack">Stack</NavLink>
           <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
