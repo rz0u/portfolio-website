@@ -1,5 +1,5 @@
 import React from "react";
-import { CloseRounded, GitHub } from "@mui/icons-material";
+import { CloseRounded, GitHub, Launch } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import styled from "styled-components";
 
@@ -148,11 +148,12 @@ const index = ({ openModal, setOpenModal }) => {
           <Description>{project?.description}</Description>
           <ButtonGroup>
             <Button dull href={project?.github} target="new">
-              View Code
+              {/* View Code */}
               <GitHub />
             </Button>
             <Button href={project?.webapp} target="new">
-              Live Demo
+              {/* Live Demo */}
+              <Launch />
             </Button>
           </ButtonGroup>
         </Wrapper>

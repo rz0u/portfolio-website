@@ -11,21 +11,23 @@ const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px;
-  z-index: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70%, 95%, 0 100%);
-  @media screen and (max-width: 960px) {
+  @media (max-width: 960px) {
     padding: 66px 16px;
   }
-  @media screen and (max-width: 640px) {
+  @media (max-width: 640) {
     padding: 32px 16px;
   }
+  z-index: 1;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
 const HeroBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: end;
-  width: 85%;
+  width: 100%;
+  max-width: 1360px;
   height: 100%;
   top: 50%;
   right: 0;
