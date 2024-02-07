@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.cardLight};
@@ -23,11 +22,11 @@ export const NavContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 30px;
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.a`
   width: 80%;
   padding: 0 6px;
   display: flex;
@@ -44,8 +43,8 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10%;
+    right: 3%;
     transform: translate(-100%, 50%);
     font-size: 1.5rem;
     cursor: pointer;
@@ -57,7 +56,7 @@ export const NavItems = styled.ul`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 32px;
   list-style: none;
   @media screen and (max-width: 768px) {
@@ -117,29 +116,31 @@ export const Span = styled.span`
 `;
 
 export const MobileMenu = styled.div`
+  visibility: ${({ open }) => (open ? "visible" : "hidden")};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 50px;
   position: absolute;
-  top: 80;
+  top: 80px;
   right: 0;
   width: 100%;
+  height: 40vh;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.cardLight + 99};
+  background: ${({ theme }) => theme.cardLight};
   transition: all 0.3s ease-in-out;
-  border-radius: 0 0 20 20px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   opacity: ${({ open }) => (open ? 1 : 0)};
   z-index: ${({ open }) => (open ? 1 : -1)};
 `;
 
-export const MobileLinks = styled(LinkR)`
+export const MobileLinks = styled.a`
   color: ${({ theme }) => theme.textPrimary};
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.6s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
   }

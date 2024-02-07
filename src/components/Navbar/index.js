@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "styled-components";
+// import { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import {
@@ -9,8 +9,8 @@ import {
   Span,
   NavLogo,
   NavItems,
-  MailButton,
-  ButtonContainer,
+  // MailButton,
+  // ButtonContainer,
   MobileIcon,
   MobileMenu,
   MobileLinks,
@@ -18,7 +18,7 @@ import {
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Nav>
@@ -49,50 +49,47 @@ const Navbar = () => {
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#stack">Stack</NavLink>
           <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
-        <ButtonContainer>
-          <MailButton href="#contact">Contact Me!</MailButton>
-        </ButtonContainer>
+        {/* <ButtonContainer>
+          <MailButton href="#contact"></MailButton>
+        </ButtonContainer> */}
       </NavContainer>
-      {open && (
-        <MobileMenu open={open}>
-          <MobileLinks
-            href="#home"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Home
-          </MobileLinks>
-          <MobileLinks
-            href="#about"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            About
-          </MobileLinks>
-          <MobileLinks
-            href="#projects"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Projects
-          </MobileLinks>
-          <MailButton
-            style={{
-              padding: "10px 16px",
-              background: `${theme.primary}`,
-              color: "white",
-              width: "max-content",
-            }}
-            href="#contact"
-          >
-            Contact Me!
-          </MailButton>
-        </MobileMenu>
-      )}
+
+      <MobileMenu open={open}>
+        <MobileLinks
+          href="#home"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          Home
+        </MobileLinks>
+        <MobileLinks
+          href="#stack"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          Stack
+        </MobileLinks>
+        <MobileLinks
+          href="#projects"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          Projects
+        </MobileLinks>
+        <MobileLinks
+          href="#contact"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          Contact
+        </MobileLinks>
+      </MobileMenu>
     </Nav>
   );
 };
