@@ -183,7 +183,7 @@ const Navbar = () => {
           <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <MailButton>Contact Me!</MailButton>
+          <MailButton href="#contact">Contact Me!</MailButton>
         </ButtonContainer>
       </NavContainer>
       {open && (

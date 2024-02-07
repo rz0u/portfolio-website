@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import { useState } from "react";
 import ProjectDetails from "./components/ProjectDetails";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -46,7 +47,10 @@ function App() {
           {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           )}
-          <Contact />
+          <Wrapper>
+            <Contact />
+          </Wrapper>
+          <Footer />
         </Body>
       </Router>
     </ThemeProvider>

@@ -17,6 +17,9 @@ const HeroContainer = styled.div`
   @media (max-width: 640) {
     padding: 32px 16px;
   }
+  @media (min-width: 1020px) {
+    height: 90vh;
+  }
   z-index: 1;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
@@ -41,6 +44,9 @@ const HeroBg = styled.div`
   @media (max-width: 960px) {
     justify-content: center;
     padding: 0 0px;
+  }
+  @media (min-width: 1020px) {
+    top: 65%;
   }
 `;
 const HeroInnerContainer = styled.div`
@@ -171,7 +177,7 @@ const Img = styled.img`
 
 const Hero = () => {
   return (
-    <div id="about">
+    <div id="home">
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation />
