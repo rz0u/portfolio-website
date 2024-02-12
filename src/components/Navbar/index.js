@@ -9,8 +9,6 @@ import {
   Span,
   NavLogo,
   NavItems,
-  // MailButton,
-  // ButtonContainer,
   MobileIcon,
   MobileMenu,
   MobileLinks,
@@ -29,7 +27,7 @@ const Navbar = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "white",
+              color: "#6492aa",
               marginBottom: "20;",
               cursor: "pointer",
               textDecoration: "none",

@@ -65,6 +65,8 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
+  display: flex;
+  justify-content: center;
   color: ${({ theme }) => theme.textPrimary};
   font-weight: 500;
   cursor: pointer;
@@ -113,6 +115,7 @@ export const Span = styled.span`
   padding: 0px 4px;
   font-size: 18px;
   font-weight: bold;
+  color: ${({ theme }) => theme.textPrimary};
 `;
 
 export const MobileMenu = styled.div`

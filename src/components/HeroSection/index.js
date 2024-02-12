@@ -26,6 +26,7 @@ const HeroContainer = styled.div`
 `;
 
 const HeroBg = styled.div`
+  filter: grayscale(1);
   position: absolute;
   display: flex;
   justify-content: end;
@@ -161,7 +162,7 @@ const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: bottom;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
