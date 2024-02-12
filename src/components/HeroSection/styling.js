@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import heroimg from "../../assets/heroimg.jpg";
 
 export const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -159,6 +160,47 @@ export const Img = styled.img`
   object-fit: cover;
   object-position: bottom;
   border: 2px solid ${({ theme }) => theme.primary};
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
+const morphing = keyframes`
+0% {
+  border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+} 
+
+50% {
+  border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+
+100% {
+border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+`;
+
+export const Image = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: url(${heroimg});
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  animation: ${morphing} 8s ease-in-out infinite;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     max-width: 400px;
