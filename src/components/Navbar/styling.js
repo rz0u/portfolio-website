@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.cardLight};
+  background-color: ${({ theme }) => theme.bg};
   height: 80px;
   display: flex;
   align-items: center;
@@ -36,6 +36,12 @@ export const NavLogo = styled.a`
   @media (max-width: 640px) {
     padding: 0 0px;
   }
+`;
+
+export const Logo = styled.img`
+  height: 1.5rem;
+  padding-right: 0.2rem;
+  color: ${({ theme }) => theme.textPrimary};
 `;
 
 export const MobileIcon = styled.div`
@@ -130,7 +136,7 @@ export const MobileMenu = styled.div`
   width: 100%;
   height: 40vh;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.cardLight};
+  background: ${({ theme }) => theme.bg};
   transition: all 0.3s ease-in-out;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);

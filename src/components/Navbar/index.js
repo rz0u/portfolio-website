@@ -1,10 +1,11 @@
 import React from "react";
-// import { useTheme } from "styled-components";
-import { DiCssdeck } from "react-icons/di";
+import logo from "../../assets/logo.png";
+// import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavLink,
+  Logo,
   NavContainer,
   Span,
   NavLogo,
@@ -33,7 +34,7 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>rzou.dev</Span>
+            <Logo src={logo} /> <Span>rzou.dev</Span>
           </a>
         </NavLogo>
         <MobileIcon>
