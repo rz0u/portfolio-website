@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-// import { DiCssdeck } from "react-icons/di";
+// import { useTheme } from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { IoMdSunny, IoMdMoon } from "react-icons/io";
 import {
   Nav,
   NavLink,
@@ -13,11 +14,18 @@ import {
   MobileIcon,
   MobileMenu,
   MobileLinks,
+  Toggle,
 } from "./styling";
 
-const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
+const Navbar = ({ toggleTheme, isDarkTheme }) => {
+  const [open, setOpen] = useState(false);
   // const theme = useTheme();
+  const [isToggled, setIsToggled] = useState(isDarkTheme);
+
+  const onToggle = () => {
+    setIsToggled(!isToggled);
+    toggleTheme();
+  };
 
   return (
     <Nav>
@@ -49,10 +57,10 @@ const Navbar = () => {
           <NavLink href="#stack">Stack</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#contact">Contact</NavLink>
+          <Toggle onClick={onToggle}>
+            {isDarkTheme ? <IoMdSunny /> : <IoMdMoon />}
+          </Toggle>
         </NavItems>
-        {/* <ButtonContainer>
-          <MailButton href="#contact"></MailButton>
-        </ButtonContainer> */}
       </NavContainer>
 
       <MobileMenu open={open}>

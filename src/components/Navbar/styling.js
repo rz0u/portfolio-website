@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  background: ${({ theme }) => theme.bg};
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   height: 80px;
   display: flex;
   align-items: center;
@@ -95,22 +97,22 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const MailButton = styled.button`
+export const Toggle = styled.button`
   background-color: transparent;
-  color: ${({ theme }) => theme.primary};
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
+  color: ${({ theme }) => theme.textPrimary};
+  border: 1.8px solid ${({ theme }) => theme.textPrimary};
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 5px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   height: 70%;
   transition: all 0.4s ease-in-out;
   &:hover {
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.textPrimary};
+    color: ${({ theme }) => theme.bg};
   }
   @media screen and (max-width: 640px) {
     font-size: 0.8rem;
@@ -137,6 +139,8 @@ export const MobileMenu = styled.div`
   height: 40vh;
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.bg};
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);

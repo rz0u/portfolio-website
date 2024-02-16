@@ -1,6 +1,6 @@
 import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme } from "./utils/themes";
+import { darkTheme, lightTheme } from "./utils/themes";
 import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
@@ -33,11 +33,17 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const isDarkTheme = theme === "dark";
+  const toggleTheme = () => {
+    setTheme(isDarkTheme ? "light" : "dark");
+  };
+
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Router>
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <Body>
           <Hero />
           <Wrapper>
