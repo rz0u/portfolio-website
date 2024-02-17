@@ -150,13 +150,14 @@ export const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   position: absolute;
   top: 80px;
   right: 0;
   width: 100%;
-  height: 40vh;
-  padding: 12px 40px 24px 40px;
+  height: 100vh;
+  padding: 12px 40px 190px;
   background: ${({ theme }) => theme.bg};
   // backdrop-filter: blur(50px);
   // -webkit-backdrop-filter: blur(50px);

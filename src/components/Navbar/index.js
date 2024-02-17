@@ -18,7 +18,6 @@ import {
 
 const Navbar = ({ toggleTheme, isDarkTheme }) => {
   const [open, setOpen] = useState(false);
-  // const theme = useTheme();
   const [isToggled, setIsToggled] = useState(isDarkTheme);
 
   const onToggle = () => {

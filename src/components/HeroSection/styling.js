@@ -6,12 +6,12 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 80px 30px 0px;
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    padding: 66px 16px 0px;
   }
   @media (max-width: 640) {
-    padding: 32px 16px;
+    padding: 32px 16px 0px;
   }
   @media (min-width: 1020px) {
     height: 90vh;
