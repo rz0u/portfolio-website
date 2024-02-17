@@ -148,6 +148,9 @@ export const SubTitle = styled.div`
     font-size: 16px;
     line-height: 32px;
   }
+  @media (max-width: 450px) {
+    padding: 0 15px;
+  }
 `;
 
 export const Img = styled.img`

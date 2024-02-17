@@ -9,8 +9,8 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. Here are some of my
-          projects.
+          I've been involved in various projects across different domains.
+          Here's some of them.
         </Desc>
         <CardContainer>
           {projects.map((project) => (

@@ -90,7 +90,7 @@ function Footer() {
         <Logo>Rayhan Zou</Logo>
         <Nav>
           <NavLink href="#home">Home</NavLink>
-          <NavLink href="#skills">Stack</NavLink>
+          <NavLink href="#stack">Stack</NavLink>
           <NavLink href="#projects">Projects</NavLink>
         </Nav>
         <SocialMediaIcons>

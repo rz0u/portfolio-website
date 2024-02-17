@@ -48,10 +48,13 @@ export const Description = styled.div`
     margin-top: 12px;
     font-size: 16px;
   }
+  @media (max-width: 450px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const ContactForm = styled.form`
-  width: 95%;
+  width: 90%;
   max-width: 600px;
   display: flex;
   flex-direction: column;

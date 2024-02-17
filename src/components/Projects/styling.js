@@ -44,6 +44,9 @@ export const Desc = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
+  @media (max-width: 450px) {
+    padding: 0 20px 12px;
+  }
 `;
 
 export const CardContainer = styled.div`
