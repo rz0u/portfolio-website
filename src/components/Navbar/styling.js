@@ -60,6 +60,23 @@ export const MobileIcon = styled.div`
   }
 `;
 
+export const MobileIcon1 = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 0.5rem;
+    top: 10%;
+    left: 93%;
+    transform: translate(-100%, 50%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.textPrimary};
+  }
+`;
+
 export const NavItems = styled.ul`
   width: 100%;
   display: flex;

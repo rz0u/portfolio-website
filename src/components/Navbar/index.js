@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-// import { useTheme } from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
 import {
@@ -11,7 +10,7 @@ import {
   Span,
   NavLogo,
   NavItems,
-  MobileIcon,
+  MobileIcon1,
   MobileMenu,
   MobileLinks,
   Toggle,
@@ -45,16 +44,20 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
             <Logo src={logo} /> <Span>rzou.dev</Span>
           </a>
         </NavLogo>
-        <MobileIcon>
-          {/* <Toggle onClick={onToggle}>
-            {isDarkTheme ? <IoMdSunny /> : <IoMdMoon />}
-          </Toggle> */}
+        <MobileIcon1>
+          <Toggle onClick={onToggle}>
+            {isDarkTheme ? (
+              <IoMdSunny size={"1rem"} />
+            ) : (
+              <IoMdMoon size={"1rem"} />
+            )}
+          </Toggle>
           <FaBars
             onClick={() => {
               setOpen(!open);
             }}
           />
-        </MobileIcon>
+        </MobileIcon1>
         <NavItems>
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#stack">Stack</NavLink>
