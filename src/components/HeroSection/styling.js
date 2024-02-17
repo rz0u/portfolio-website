@@ -7,6 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px 0px;
+  transition: all 0.5s ease-in-out;
   @media (max-width: 960px) {
     padding: 66px 16px 0px;
   }

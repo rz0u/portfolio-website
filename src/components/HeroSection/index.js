@@ -15,34 +15,32 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div id="home">
-      <HeroContainer>
-        <HeroInnerContainer>
-          <HeroLeftContainer>
-            <Title>
-              Hi, I am <br />
-              {Bio.name}
-            </Title>
-            <TextLoop>
-              I am a{" "}
-              <Span>
-                <Typewriter
-                  options={{
-                    strings: Bio.roles,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </Span>
-            </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
-          </HeroLeftContainer>
-          <HeroRightContainer>
-            <Image />
-          </HeroRightContainer>
-        </HeroInnerContainer>
-      </HeroContainer>
-    </div>
+    <HeroContainer id="home">
+      <HeroInnerContainer>
+        <HeroLeftContainer>
+          <Title>
+            Hi, I am <br />
+            {Bio.name}
+          </Title>
+          <TextLoop>
+            I am a{" "}
+            <Span>
+              <Typewriter
+                options={{
+                  strings: Bio.roles,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Span>
+          </TextLoop>
+          <SubTitle>{Bio.description}</SubTitle>
+        </HeroLeftContainer>
+        <HeroRightContainer>
+          <Image />
+        </HeroRightContainer>
+      </HeroInnerContainer>
+    </HeroContainer>
   );
 };
 
