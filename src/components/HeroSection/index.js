@@ -8,7 +8,6 @@ import {
   Span,
   SubTitle,
   HeroRightContainer,
-  // Img,
   Image,
 } from "./styling";
 import { Bio } from "../../data/constant";
@@ -39,7 +38,6 @@ const Hero = () => {
             <SubTitle>{Bio.description}</SubTitle>
           </HeroLeftContainer>
           <HeroRightContainer>
-            {/* <Img src={HeroImg} alt="HeroImage" /> */}
             <Image />
           </HeroRightContainer>
         </HeroInnerContainer>

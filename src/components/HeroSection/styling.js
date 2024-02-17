@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import heroimg from "../../assets/heroimg.jpg";
+import heroimg from "../../assets/heroimg.webp";
 
 export const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
