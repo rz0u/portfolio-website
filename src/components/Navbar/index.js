@@ -46,6 +46,9 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
           </a>
         </NavLogo>
         <MobileIcon>
+          {/* <Toggle onClick={onToggle}>
+            {isDarkTheme ? <IoMdSunny /> : <IoMdMoon />}
+          </Toggle> */}
           <FaBars
             onClick={() => {
               setOpen(!open);

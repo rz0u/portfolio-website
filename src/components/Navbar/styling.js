@@ -98,9 +98,10 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Toggle = styled.button`
+  display: flex;
   background-color: transparent;
   color: ${({ theme }) => theme.textPrimary};
-  border: 1.8px solid ${({ theme }) => theme.textPrimary};
+  border: 1.8px solid ${({ theme }) => theme.bg};
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -108,7 +109,8 @@ export const Toggle = styled.button`
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  height: 70%;
+  height: 2rem;
+  width: 2rem;
   transition: all 0.4s ease-in-out;
   &:hover {
     background-color: ${({ theme }) => theme.textPrimary};
@@ -139,8 +141,8 @@ export const MobileMenu = styled.div`
   height: 40vh;
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.bg};
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(50px);
+  // -webkit-backdrop-filter: blur(50px);
   transition: all 0.3s ease-in-out;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
