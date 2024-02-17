@@ -15,6 +15,7 @@ const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
 `;
 
 const Wrapper = styled.div`
