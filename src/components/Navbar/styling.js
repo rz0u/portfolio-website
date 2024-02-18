@@ -50,20 +50,6 @@ export const Logo = styled.img`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 10%;
-    right: 3%;
-    transform: translate(-100%, 50%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({ theme }) => theme.textPrimary};
-  }
-`;
-
-export const MobileIcon1 = styled.div`
-  display: none;
-  @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -10,7 +10,7 @@ import {
   Span,
   NavLogo,
   NavItems,
-  MobileIcon1,
+  MobileIcon,
   MobileMenu,
   MobileLinks,
   Toggle,
@@ -43,7 +43,7 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
             <Logo src={logo} /> <Span>rzou.dev</Span>
           </a>
         </NavLogo>
-        <MobileIcon1>
+        <MobileIcon>
           <Toggle onClick={onToggle}>
             {isDarkTheme ? (
               <IoMdSunny size={"1rem"} />
@@ -56,7 +56,7 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
               setOpen(!open);
             }}
           />
-        </MobileIcon1>
+        </MobileIcon>
         <NavItems>
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#stack">Stack</NavLink>

@@ -34,10 +34,13 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const initialTheme = localStorage.getItem("theme") || "light";
+  const [theme, setTheme] = useState(initialTheme);
   const isDarkTheme = theme === "dark";
   const toggleTheme = () => {
-    setTheme(isDarkTheme ? "light" : "dark");
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   const [openModal, setOpenModal] = useState({ state: false, project: null });
