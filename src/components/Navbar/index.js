@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import { FaBars } from "react-icons/fa";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
 import {
@@ -44,11 +44,11 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
           </a>
         </NavLogo>
         <MobileIcon>
-          <Toggle name="darkmodeToggle" onClick={onToggle}>
+          <Toggle aria-label="darkmodeToggle" onClick={onToggle}>
             {isDarkTheme ? (
-              <IoMdSunny size={"1rem"} />
+              <IoMdSunny aria-label="lightToggle" size={"1rem"} />
             ) : (
-              <IoMdMoon size={"1rem"} />
+              <IoMdMoon aria-label="darkToggle" size={"1rem"} />
             )}
           </Toggle>
           <FaBars

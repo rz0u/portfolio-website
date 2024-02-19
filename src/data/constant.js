@@ -1,6 +1,6 @@
-import lokalestari from "../assets/lokalestari.png";
-import abclinic from "../assets/abclinic.jpg";
-import droid from "../assets/droid.png";
+import lokalestari from "../assets/lokalestari.webp";
+import abclinic from "../assets/abclinic.webp";
+import droid from "../assets/droid.webp";
 
 export const Bio = {
   name: "Rayhan Zou",
