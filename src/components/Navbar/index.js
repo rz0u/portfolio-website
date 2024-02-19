@@ -40,11 +40,11 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
               textDecoration: "none",
             }}
           >
-            <Logo src={logo} /> <Span>rzou.dev</Span>
+            <Logo alt="logo" src={logo} /> <Span>rzou.dev</Span>
           </a>
         </NavLogo>
         <MobileIcon>
-          <Toggle onClick={onToggle}>
+          <Toggle name="darkmodeToggle" onClick={onToggle}>
             {isDarkTheme ? (
               <IoMdSunny size={"1rem"} />
             ) : (

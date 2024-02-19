@@ -94,16 +94,32 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.github} target="display">
+          <SocialMediaIcon
+            aria-label={Bio.github}
+            href={Bio.github}
+            target="display"
+          >
             <GitHubIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
+          <SocialMediaIcon
+            aria-label={Bio.twitter}
+            href={Bio.twitter}
+            target="display"
+          >
             <TwitterIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon
+            aria-label={Bio.linkedin}
+            href={Bio.linkedin}
+            target="display"
+          >
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
+          <SocialMediaIcon
+            aria-label={Bio.insta}
+            href={Bio.insta}
+            target="display"
+          >
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
